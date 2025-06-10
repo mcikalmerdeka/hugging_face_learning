@@ -1,0 +1,24 @@
+Source: https://claude.ai/chat/5736cefe-8465-4b8d-b79b-73a939830695
+
+---------------------------------------------------------------------------------------------------
+
+something that i found, when checking the system storage used in C using the is that the Other category which include this directory eat up quite a large storage of my system, if I only used this for learning where i run it once and probably wont use it again, should i just delete them? here is the directory
+
+C:\Users\Cikal Merdeka\.cache\huggingface
+
+Yes, you can safely delete that directory if you're only using it for learning purposes and don't plan to use those models again soon.
+
+The `C:\Users\Cikal Merdeka\.cache\huggingface` directory stores downloaded machine learning models and datasets from Hugging Face. This cache can grow quite large since ML models are typically several gigabytes each. The cache exists to avoid re-downloading models every time you use them.
+
+If you delete it:
+- **Pros**: You'll free up significant disk space (often several GB)
+- **Cons**: If you run Hugging Face code again, it will need to re-download any models you use, which takes time and bandwidth
+
+Since you mentioned this is just for learning and you ran it once, deleting it makes sense. You can always let it rebuild the cache later if you decide to work with Hugging Face models again.
+
+To delete it, you can either:
+1. Navigate to the folder in File Explorer and delete it
+2. Use Command Prompt: `rmdir /s "C:\Users\Cikal Merdeka\.cache\huggingface"`
+
+The cache will automatically recreate itself (empty) the next time you use any Hugging Face libraries.
+
